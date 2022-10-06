@@ -8,7 +8,6 @@ let context = canvas.getContext("2d");
 drawnLine();
 
 function drawnLine(){
-    
     //Letter F
     context.lineWidth = 3;
     context.strokeStyle = "blue";
@@ -63,6 +62,4 @@ function drawnLine(){
     context.lineTo(510, 160);
     context.lineTo(560, 200);
     context.stroke();
-
-
 }
