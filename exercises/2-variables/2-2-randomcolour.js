@@ -5,9 +5,6 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let context = canvas.getContext("2d");
 
-let width = context.canvas.width;
-let height = context.canvas.height;
-
 drawRect(50, 300);
 drawRect(70, 260);
 drawRect(90, 220);
