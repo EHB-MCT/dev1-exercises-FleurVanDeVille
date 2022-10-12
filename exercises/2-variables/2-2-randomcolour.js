@@ -19,6 +19,7 @@ function drawRect(pos, size){
     let r = Math.floor(Math.random() * 255);
     let g = Math.floor(Math.random() * 255);
     let b = Math.floor(Math.random() * 255);
+    console.log(r, g, b);
     let color = "rgb( " + r +  "," + g + "," + b + ")";
 
     context.fillStyle = color;
