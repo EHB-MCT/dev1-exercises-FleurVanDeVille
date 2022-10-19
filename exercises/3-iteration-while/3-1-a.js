@@ -12,10 +12,12 @@ function draw() {
 }
 
 function drawLines() {
-    let i = 2;
+    let i = 0;
+    let spacing = 25;
     while (i < 11) {
         console.log(i);
-        Utils.drawLine(75, 50 + i * 25, 325, 50 + i * 25 );
+        Utils.drawLine(75, 75 + (spacing * i), 325, 75 + (spacing * i) );
+        console.log("loop!");
         i ++;
     }
 }
