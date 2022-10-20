@@ -13,8 +13,9 @@ function draw() {
 
 function drawDiagonalSquares() {
     let i = 0;
+    let step = 25;
     while (i < 7) {
-        context.strokeRect(75 + (i * 25), 75 + (i * 25), 100, 100);
+        context.strokeRect(75 + (i * step), 75 + (i * step), 100, 100);
         i = i + 1;
     }
 }
