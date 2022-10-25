@@ -15,20 +15,10 @@ function draw() {
 function drawDiagonalGrid() {
     let i = 0;
     while (i <= 5) {
-        let x = ;
-        let y = ;
-        Utils.drawLine(50, 200 , , );
-        Utils.drawLine(, , , );
+        let x = 75 + i * 50;
+        let y = x;
+        Utils.drawLine(50+ (i * 25), y , 325+ (i * 25), y);
+        Utils.drawLine(x, 50+ (i * 25), x, 325+ (i * 25));
         i = ;
     }
-}
-
-let i = 0;
-while (i < 6) {
-    let x = 75 + i * 50;
-    let y = x;
-    console.log(i);
-    Utils.drawLine(75, y , 325, y);
-    Utils.drawLine(x, 75, x, 325);
-    i++ ;
 }
