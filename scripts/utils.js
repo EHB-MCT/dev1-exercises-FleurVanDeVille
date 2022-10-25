@@ -23,7 +23,22 @@ export function rgb(r, g, b){
 }
 
 export function strokeCircle(x, y, radius){
+    strokeEllipse(x, y, radius);
+}
+
+export function fillAndStrokeEllipse(x, y, rX, rY) {
+    fillEllipse(x, y, rX, rY);
+    strokeEllipse(x, y, rX, rY);
+}
+
+function fillEllipse(x, y, rX, rY) {
     context.beginPath();
-    context.ellipse(x, y, radius, radius, 0, 0, Math.PI * 2);
+    context.ellipse(x, y, rX, rY, 0, 0, Math.PI * 2);
+    context.fill();
+}
+
+function strokeEllipse(x, y, rX, rY) {
+    context.beginPath();
+    context.ellipse(x, y, rX, rY, 0, 0, Math.PI * 2);
     context.stroke();
 }
