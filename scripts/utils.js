@@ -42,3 +42,10 @@ function strokeEllipse(x, y, rX, rY) {
     context.ellipse(x, y, rX, rY, 0, 0, Math.PI * 2);
     context.stroke();
 }
+
+export function fillCircle(x, y, radius){
+    context.beginPath();
+    context.ellipse(x, y, radius, radius, 0, 0, Math.PI*2);
+    context.fill();
+}
+
