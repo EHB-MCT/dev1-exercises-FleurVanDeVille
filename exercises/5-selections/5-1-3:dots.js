@@ -12,6 +12,23 @@ function drawDots(){
     for (let i = 0; i < 10000; i++){
         let x = Math.random() * width;
         let y = Math.random() * height;
+        if(x < width/4){
+            context.fillStyle = "red";
+        } else if(x > width/4 * 3){
+            context.fillStyle = "yellow";
+        } else{
+            context.fillStyle = "white";
+        }
+        Utils.fillCircle(x, y, 6);
+    }
+}
+
+
+/*
+function drawDots(){
+    for (let i = 0; i < 10000; i++){
+        let x = Math.random() * width;
+        let y = Math.random() * height;
         if(x < 280){
             context.fillStyle = "red";
         }
@@ -23,4 +40,4 @@ function drawDots(){
         }
         Utils.fillCircle(x, y, 6);
     }
-}
+}*/
