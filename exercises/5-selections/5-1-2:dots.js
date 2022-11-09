@@ -12,13 +12,13 @@ function drawDots(){
     for (let i = 0; i < 10000; i++){
         let x = Math.random() * width;
         let y = Math.random() * height;
-        if(y < 280){
+        if(x < 280){
             context.fillStyle = "red";
         }
-        if(y > 280 && y < 550){
+        if(x > 280 && x < 1250){
             context.fillStyle = "white";
         }
-        if(y > 550){
+        if(x > 1250){
             context.fillStyle = "blue";
         }
         Utils.fillCircle(x, y, 6);
