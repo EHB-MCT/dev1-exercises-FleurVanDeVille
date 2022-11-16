@@ -49,3 +49,12 @@ export function fillCircle(x, y, radius){
     context.fill();
 }
 
+/**
+ * function that returns a random whole number between a minimum and a maximumm value
+ * @param {number} min minimum value
+ * @param {number} max maximum value
+ */
+ export function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
