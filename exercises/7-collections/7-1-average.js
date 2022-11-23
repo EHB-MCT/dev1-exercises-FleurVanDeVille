@@ -6,16 +6,21 @@ import * as Utils from "../../scripts/utils.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
+let numbers = [];
+let average = 0;
 let arrayAmount = 1000;
-let numbers = Math.random(0, 100) * 100;
-let average = 1;
-let calculate = [];
 
-calculateAverage();
+setup();
 
-function calculateAverage(){
+function setup(){
     for(let i = 0; i < arrayAmount; i++){
-        calculate[i] = numbers;
+        numbers[i] = Utils.randomNumber(0, 100);
     }
-    console.log(calculateAverage);
+    console.log(calculateAverage(numbers));
+}
+
+function calculateAverage(list){
+    average += list[i];
+    average = average / arrayAmount;
+    return average;
 }
