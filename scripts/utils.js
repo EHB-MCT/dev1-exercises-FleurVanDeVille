@@ -58,3 +58,11 @@ export function fillCircle(x, y, radius){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/** function that formats an hsl value based on parameters
+ * @param {number} h the hue in degrees
+ * @param {number} s the saturation in percentage
+ * @param {number} l the lightness in percentage
+ */
+ export function hsl(h, s, l) {
+    return "hsl(" + h + "," + s + "%," + l + "%)";
+}
