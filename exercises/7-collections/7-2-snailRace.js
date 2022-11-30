@@ -6,8 +6,6 @@ import * as Utils from "../../scripts/utils.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
-
-
 setup();
 draw();
 
@@ -19,6 +17,9 @@ function setup() {
 function draw() {
     let space = height / 5;
     drawSnail(space / 2, space / 2, space, 1);
+    drawSnail(space / 2, space * 1.5, space, 2);
+    drawSnail(space / 2, space * 2.5, space, 2);
+    drawSnail(space / 2, space * 3.5, space, 2);
 }
 
 function drawSnail(x, y, sizeY, number) {
@@ -46,3 +47,5 @@ function drawSnail(x, y, sizeY, number) {
     context.font = "bold " + sizeY / 5 + "pt Arial";
     context.fillText(number, x, y + sizeY / 8);
 }
+
+
